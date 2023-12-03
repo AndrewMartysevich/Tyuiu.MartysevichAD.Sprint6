@@ -31,21 +31,21 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task1.V14
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBoxUslovie_MAD = new System.Windows.Forms.GroupBox();
-            this.groupBoxResult_MAD = new System.Windows.Forms.GroupBox();
-            this.groupBoxData_MAD = new System.Windows.Forms.GroupBox();
-            this.TextBoxOut_MAD = new System.Windows.Forms.TextBox();
             this.pictureBoxIn_MAD = new System.Windows.Forms.PictureBox();
-            this.textBoxX_MAD = new System.Windows.Forms.TextBox();
-            this.textBoxY_MAD = new System.Windows.Forms.TextBox();
-            this.textBoxStart_MAD = new System.Windows.Forms.TextBox();
-            this.textBoxstop_MAD = new System.Windows.Forms.TextBox();
+            this.groupBoxResult_MAD = new System.Windows.Forms.GroupBox();
             this.textBoxResult_MAD = new System.Windows.Forms.TextBox();
+            this.TextBoxOut_MAD = new System.Windows.Forms.TextBox();
+            this.groupBoxData_MAD = new System.Windows.Forms.GroupBox();
+            this.textBoxstop_MAD = new System.Windows.Forms.TextBox();
+            this.textBoxStart_MAD = new System.Windows.Forms.TextBox();
+            this.textBoxY_MAD = new System.Windows.Forms.TextBox();
+            this.textBoxX_MAD = new System.Windows.Forms.TextBox();
             this.buttonInfo_MAD = new System.Windows.Forms.Button();
             this.buttonDo_MAD = new System.Windows.Forms.Button();
             this.groupBoxUslovie_MAD.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIn_MAD)).BeginInit();
             this.groupBoxResult_MAD.SuspendLayout();
             this.groupBoxData_MAD.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIn_MAD)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxUslovie_MAD
@@ -58,6 +58,15 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task1.V14
             this.groupBoxUslovie_MAD.TabStop = false;
             this.groupBoxUslovie_MAD.Text = "Условие";
             // 
+            // pictureBoxIn_MAD
+            // 
+            this.pictureBoxIn_MAD.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxIn_MAD.Image")));
+            this.pictureBoxIn_MAD.Location = new System.Drawing.Point(6, 21);
+            this.pictureBoxIn_MAD.Name = "pictureBoxIn_MAD";
+            this.pictureBoxIn_MAD.Size = new System.Drawing.Size(840, 250);
+            this.pictureBoxIn_MAD.TabIndex = 0;
+            this.pictureBoxIn_MAD.TabStop = false;
+            // 
             // groupBoxResult_MAD
             // 
             this.groupBoxResult_MAD.Controls.Add(this.textBoxResult_MAD);
@@ -68,6 +77,29 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task1.V14
             this.groupBoxResult_MAD.TabIndex = 1;
             this.groupBoxResult_MAD.TabStop = false;
             this.groupBoxResult_MAD.Text = "Вывод Данных";
+            // 
+            // textBoxResult_MAD
+            // 
+            this.textBoxResult_MAD.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxResult_MAD.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxResult_MAD.Location = new System.Drawing.Point(6, 42);
+            this.textBoxResult_MAD.Multiline = true;
+            this.textBoxResult_MAD.Name = "textBoxResult_MAD";
+            this.textBoxResult_MAD.ReadOnly = true;
+            this.textBoxResult_MAD.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxResult_MAD.Size = new System.Drawing.Size(271, 358);
+            this.textBoxResult_MAD.TabIndex = 1;
+            // 
+            // TextBoxOut_MAD
+            // 
+            this.TextBoxOut_MAD.BackColor = System.Drawing.SystemColors.Menu;
+            this.TextBoxOut_MAD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextBoxOut_MAD.Location = new System.Drawing.Point(6, 21);
+            this.TextBoxOut_MAD.Name = "TextBoxOut_MAD";
+            this.TextBoxOut_MAD.ReadOnly = true;
+            this.TextBoxOut_MAD.Size = new System.Drawing.Size(100, 15);
+            this.TextBoxOut_MAD.TabIndex = 0;
+            this.TextBoxOut_MAD.Text = "Результат:";
             // 
             // groupBoxData_MAD
             // 
@@ -82,39 +114,16 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task1.V14
             this.groupBoxData_MAD.TabStop = false;
             this.groupBoxData_MAD.Text = "Ввод Данных";
             // 
-            // TextBoxOut_MAD
+            // textBoxstop_MAD
             // 
-            this.TextBoxOut_MAD.BackColor = System.Drawing.SystemColors.Menu;
-            this.TextBoxOut_MAD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBoxOut_MAD.Location = new System.Drawing.Point(6, 21);
-            this.TextBoxOut_MAD.Name = "TextBoxOut_MAD";
-            this.TextBoxOut_MAD.ReadOnly = true;
-            this.TextBoxOut_MAD.Size = new System.Drawing.Size(100, 15);
-            this.TextBoxOut_MAD.TabIndex = 0;
-            this.TextBoxOut_MAD.Text = "Результат:";
-            // 
-            // pictureBoxIn_MAD
-            // 
-            this.pictureBoxIn_MAD.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxIn_MAD.Image")));
-            this.pictureBoxIn_MAD.Location = new System.Drawing.Point(6, 21);
-            this.pictureBoxIn_MAD.Name = "pictureBoxIn_MAD";
-            this.pictureBoxIn_MAD.Size = new System.Drawing.Size(840, 250);
-            this.pictureBoxIn_MAD.TabIndex = 0;
-            this.pictureBoxIn_MAD.TabStop = false;
-            // 
-            // textBoxX_MAD
-            // 
-            this.textBoxX_MAD.Location = new System.Drawing.Point(189, 58);
-            this.textBoxX_MAD.Name = "textBoxX_MAD";
-            this.textBoxX_MAD.Size = new System.Drawing.Size(151, 22);
-            this.textBoxX_MAD.TabIndex = 0;
-            // 
-            // textBoxY_MAD
-            // 
-            this.textBoxY_MAD.Location = new System.Drawing.Point(6, 58);
-            this.textBoxY_MAD.Name = "textBoxY_MAD";
-            this.textBoxY_MAD.Size = new System.Drawing.Size(156, 22);
-            this.textBoxY_MAD.TabIndex = 0;
+            this.textBoxstop_MAD.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxstop_MAD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxstop_MAD.Location = new System.Drawing.Point(189, 30);
+            this.textBoxstop_MAD.Name = "textBoxstop_MAD";
+            this.textBoxstop_MAD.ReadOnly = true;
+            this.textBoxstop_MAD.Size = new System.Drawing.Size(100, 15);
+            this.textBoxstop_MAD.TabIndex = 1;
+            this.textBoxstop_MAD.Text = "Конец Шага";
             // 
             // textBoxStart_MAD
             // 
@@ -127,28 +136,19 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task1.V14
             this.textBoxStart_MAD.TabIndex = 1;
             this.textBoxStart_MAD.Text = "Старт Шага";
             // 
-            // textBoxstop_MAD
+            // textBoxY_MAD
             // 
-            this.textBoxstop_MAD.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxstop_MAD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxstop_MAD.Location = new System.Drawing.Point(189, 30);
-            this.textBoxstop_MAD.Name = "textBoxstop_MAD";
-            this.textBoxstop_MAD.ReadOnly = true;
-            this.textBoxstop_MAD.Size = new System.Drawing.Size(100, 15);
-            this.textBoxstop_MAD.TabIndex = 1;
-            this.textBoxstop_MAD.Text = "Конец Шага";
+            this.textBoxY_MAD.Location = new System.Drawing.Point(6, 58);
+            this.textBoxY_MAD.Name = "textBoxY_MAD";
+            this.textBoxY_MAD.Size = new System.Drawing.Size(156, 22);
+            this.textBoxY_MAD.TabIndex = 0;
             // 
-            // textBoxResult_MAD
+            // textBoxX_MAD
             // 
-            this.textBoxResult_MAD.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBoxResult_MAD.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxResult_MAD.Location = new System.Drawing.Point(6, 42);
-            this.textBoxResult_MAD.Multiline = true;
-            this.textBoxResult_MAD.Name = "textBoxResult_MAD";
-            this.textBoxResult_MAD.ReadOnly = true;
-            this.textBoxResult_MAD.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxResult_MAD.Size = new System.Drawing.Size(271, 358);
-            this.textBoxResult_MAD.TabIndex = 1;
+            this.textBoxX_MAD.Location = new System.Drawing.Point(189, 58);
+            this.textBoxX_MAD.Name = "textBoxX_MAD";
+            this.textBoxX_MAD.Size = new System.Drawing.Size(151, 22);
+            this.textBoxX_MAD.TabIndex = 0;
             // 
             // buttonInfo_MAD
             // 
@@ -182,15 +182,18 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task1.V14
             this.Controls.Add(this.groupBoxData_MAD);
             this.Controls.Add(this.groupBoxResult_MAD);
             this.Controls.Add(this.groupBoxUslovie_MAD);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск1 | Вариант 14 | Мартысевич А.Д.";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBoxUslovie_MAD.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIn_MAD)).EndInit();
             this.groupBoxResult_MAD.ResumeLayout(false);
             this.groupBoxResult_MAD.PerformLayout();
             this.groupBoxData_MAD.ResumeLayout(false);
             this.groupBoxData_MAD.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIn_MAD)).EndInit();
             this.ResumeLayout(false);
 
         }

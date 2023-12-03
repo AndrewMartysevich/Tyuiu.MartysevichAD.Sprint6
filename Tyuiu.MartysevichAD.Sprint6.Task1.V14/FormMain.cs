@@ -56,5 +56,10 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task1.V14
         {
             MessageBox.Show("Таск 1 выполнил студент группы ИИПб 23-3 Мартысевич А.Д.", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
