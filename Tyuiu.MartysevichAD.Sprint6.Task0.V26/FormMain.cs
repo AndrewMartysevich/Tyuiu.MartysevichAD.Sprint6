@@ -63,5 +63,10 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task0.V26
                 e.Handled = true;
             }
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -31,14 +31,14 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task0.V26
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBoxUslovie_MAD = new System.Windows.Forms.GroupBox();
-            this.textBoxOne_MAD = new System.Windows.Forms.TextBox();
             this.pictureBoxOne_MAD = new System.Windows.Forms.PictureBox();
+            this.textBoxOne_MAD = new System.Windows.Forms.TextBox();
             this.groupBoxVvod_MAD = new System.Windows.Forms.GroupBox();
-            this.groupBoxVivod_MAD = new System.Windows.Forms.GroupBox();
-            this.textBoxTwo_Mad = new System.Windows.Forms.TextBox();
-            this.textBoxThree_MAD = new System.Windows.Forms.TextBox();
-            this.textBoxFive_MAD = new System.Windows.Forms.TextBox();
             this.textBoxFour_MAD = new System.Windows.Forms.TextBox();
+            this.textBoxTwo_Mad = new System.Windows.Forms.TextBox();
+            this.groupBoxVivod_MAD = new System.Windows.Forms.GroupBox();
+            this.textBoxFive_MAD = new System.Windows.Forms.TextBox();
+            this.textBoxThree_MAD = new System.Windows.Forms.TextBox();
             this.buttonOne_MAD = new System.Windows.Forms.Button();
             this.buttonTwo_MAD = new System.Windows.Forms.Button();
             this.groupBoxUslovie_MAD.SuspendLayout();
@@ -58,17 +58,6 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task0.V26
             this.groupBoxUslovie_MAD.TabStop = false;
             this.groupBoxUslovie_MAD.Text = "Условие";
             // 
-            // textBoxOne_MAD
-            // 
-            this.textBoxOne_MAD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxOne_MAD.Location = new System.Drawing.Point(6, 21);
-            this.textBoxOne_MAD.Name = "textBoxOne_MAD";
-            this.textBoxOne_MAD.ReadOnly = true;
-            this.textBoxOne_MAD.Size = new System.Drawing.Size(271, 15);
-            this.textBoxOne_MAD.TabIndex = 0;
-            this.textBoxOne_MAD.Text = "Вычислить выражение по формуле";
-            this.textBoxOne_MAD.TextChanged += new System.EventHandler(this.textBoxOne_MAD_TextChanged);
-            // 
             // pictureBoxOne_MAD
             // 
             this.pictureBoxOne_MAD.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -81,6 +70,17 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task0.V26
             this.pictureBoxOne_MAD.TabStop = false;
             this.pictureBoxOne_MAD.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // textBoxOne_MAD
+            // 
+            this.textBoxOne_MAD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxOne_MAD.Location = new System.Drawing.Point(6, 21);
+            this.textBoxOne_MAD.Name = "textBoxOne_MAD";
+            this.textBoxOne_MAD.ReadOnly = true;
+            this.textBoxOne_MAD.Size = new System.Drawing.Size(271, 15);
+            this.textBoxOne_MAD.TabIndex = 0;
+            this.textBoxOne_MAD.Text = "Вычислить выражение по формуле";
+            this.textBoxOne_MAD.TextChanged += new System.EventHandler(this.textBoxOne_MAD_TextChanged);
+            // 
             // groupBoxVvod_MAD
             // 
             this.groupBoxVvod_MAD.Controls.Add(this.textBoxFour_MAD);
@@ -91,6 +91,28 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task0.V26
             this.groupBoxVvod_MAD.TabIndex = 1;
             this.groupBoxVvod_MAD.TabStop = false;
             this.groupBoxVvod_MAD.Text = "Ввод Данных:";
+            // 
+            // textBoxFour_MAD
+            // 
+            this.textBoxFour_MAD.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxFour_MAD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxFour_MAD.Location = new System.Drawing.Point(6, 64);
+            this.textBoxFour_MAD.Name = "textBoxFour_MAD";
+            this.textBoxFour_MAD.Size = new System.Drawing.Size(100, 15);
+            this.textBoxFour_MAD.TabIndex = 0;
+            this.textBoxFour_MAD.TextChanged += new System.EventHandler(this.textBoxFour_MAD_TextChanged);
+            this.textBoxFour_MAD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxFour_MAD_KeyPress);
+            // 
+            // textBoxTwo_Mad
+            // 
+            this.textBoxTwo_Mad.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxTwo_Mad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxTwo_Mad.Location = new System.Drawing.Point(6, 33);
+            this.textBoxTwo_Mad.Name = "textBoxTwo_Mad";
+            this.textBoxTwo_Mad.ReadOnly = true;
+            this.textBoxTwo_Mad.Size = new System.Drawing.Size(100, 15);
+            this.textBoxTwo_Mad.TabIndex = 0;
+            this.textBoxTwo_Mad.Text = "Переменная X:";
             // 
             // groupBoxVivod_MAD
             // 
@@ -104,16 +126,15 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task0.V26
             this.groupBoxVivod_MAD.Text = "Вывод Данных:";
             this.groupBoxVivod_MAD.Enter += new System.EventHandler(this.groupBoxVivod_MAD_Enter);
             // 
-            // textBoxTwo_Mad
+            // textBoxFive_MAD
             // 
-            this.textBoxTwo_Mad.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxTwo_Mad.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxTwo_Mad.Location = new System.Drawing.Point(6, 33);
-            this.textBoxTwo_Mad.Name = "textBoxTwo_Mad";
-            this.textBoxTwo_Mad.ReadOnly = true;
-            this.textBoxTwo_Mad.Size = new System.Drawing.Size(100, 15);
-            this.textBoxTwo_Mad.TabIndex = 0;
-            this.textBoxTwo_Mad.Text = "Переменная X:";
+            this.textBoxFive_MAD.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBoxFive_MAD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxFive_MAD.Location = new System.Drawing.Point(6, 64);
+            this.textBoxFive_MAD.Name = "textBoxFive_MAD";
+            this.textBoxFive_MAD.ReadOnly = true;
+            this.textBoxFive_MAD.Size = new System.Drawing.Size(100, 15);
+            this.textBoxFive_MAD.TabIndex = 0;
             // 
             // textBoxThree_MAD
             // 
@@ -126,29 +147,9 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task0.V26
             this.textBoxThree_MAD.TabIndex = 0;
             this.textBoxThree_MAD.Text = "Результат :";
             // 
-            // textBoxFive_MAD
-            // 
-            this.textBoxFive_MAD.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBoxFive_MAD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxFive_MAD.Location = new System.Drawing.Point(6, 64);
-            this.textBoxFive_MAD.Name = "textBoxFive_MAD";
-            this.textBoxFive_MAD.ReadOnly = true;
-            this.textBoxFive_MAD.Size = new System.Drawing.Size(100, 15);
-            this.textBoxFive_MAD.TabIndex = 0;
-            // 
-            // textBoxFour_MAD
-            // 
-            this.textBoxFour_MAD.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBoxFour_MAD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxFour_MAD.Location = new System.Drawing.Point(6, 64);
-            this.textBoxFour_MAD.Name = "textBoxFour_MAD";
-            this.textBoxFour_MAD.Size = new System.Drawing.Size(100, 15);
-            this.textBoxFour_MAD.TabIndex = 0;
-            this.textBoxFour_MAD.TextChanged += new System.EventHandler(this.textBoxFour_MAD_TextChanged);
-            this.textBoxFour_MAD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxFour_MAD_KeyPress);
-            // 
             // buttonOne_MAD
             // 
+            this.buttonOne_MAD.Enabled = false;
             this.buttonOne_MAD.Location = new System.Drawing.Point(455, 308);
             this.buttonOne_MAD.Name = "buttonOne_MAD";
             this.buttonOne_MAD.Size = new System.Drawing.Size(135, 41);
@@ -182,6 +183,7 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task0.V26
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск0 | Вариант 26 | Мартысевич А.Д.";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBoxUslovie_MAD.ResumeLayout(false);
             this.groupBoxUslovie_MAD.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOne_MAD)).EndInit();
