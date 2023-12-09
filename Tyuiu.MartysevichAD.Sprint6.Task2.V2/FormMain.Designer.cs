@@ -33,6 +33,7 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task2.V2
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBoxIn_MAD = new System.Windows.Forms.GroupBox();
+            this.textBoxIn_MAD = new System.Windows.Forms.TextBox();
             this.groupBoxOut_MAD = new System.Windows.Forms.GroupBox();
             this.chartFunc_MAD = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridViewFunc_MAD = new System.Windows.Forms.DataGridView();
@@ -45,7 +46,6 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task2.V2
             this.textBoxStart_MAD = new System.Windows.Forms.TextBox();
             this.buttonInfo_MAD = new System.Windows.Forms.Button();
             this.buttonResult_MAD = new System.Windows.Forms.Button();
-            this.textBoxIn_MAD = new System.Windows.Forms.TextBox();
             this.groupBoxIn_MAD.SuspendLayout();
             this.groupBoxOut_MAD.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunc_MAD)).BeginInit();
@@ -62,6 +62,19 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task2.V2
             this.groupBoxIn_MAD.TabIndex = 0;
             this.groupBoxIn_MAD.TabStop = false;
             this.groupBoxIn_MAD.Text = "Условие";
+            // 
+            // textBoxIn_MAD
+            // 
+            this.textBoxIn_MAD.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxIn_MAD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxIn_MAD.Location = new System.Drawing.Point(8, 21);
+            this.textBoxIn_MAD.Multiline = true;
+            this.textBoxIn_MAD.Name = "textBoxIn_MAD";
+            this.textBoxIn_MAD.ReadOnly = true;
+            this.textBoxIn_MAD.Size = new System.Drawing.Size(546, 54);
+            this.textBoxIn_MAD.TabIndex = 0;
+            this.textBoxIn_MAD.Text = "Протабулировать функцию на заданном диапазоне\r\nРезультат вывести в DataGridView и" +
+    " построить график функции\r\n\r\n";
             // 
             // groupBoxOut_MAD
             // 
@@ -198,19 +211,6 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task2.V2
             this.buttonResult_MAD.MouseEnter += new System.EventHandler(this.buttonResult_MAD_MouseEnter);
             this.buttonResult_MAD.MouseLeave += new System.EventHandler(this.buttonResult_MAD_MouseLeave);
             // 
-            // textBoxIn_MAD
-            // 
-            this.textBoxIn_MAD.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxIn_MAD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxIn_MAD.Location = new System.Drawing.Point(8, 21);
-            this.textBoxIn_MAD.Multiline = true;
-            this.textBoxIn_MAD.Name = "textBoxIn_MAD";
-            this.textBoxIn_MAD.ReadOnly = true;
-            this.textBoxIn_MAD.Size = new System.Drawing.Size(546, 54);
-            this.textBoxIn_MAD.TabIndex = 0;
-            this.textBoxIn_MAD.Text = "Протабулировать функцию на заданном диапазоне\r\nРезультат вывести в DataGridView и" +
-    " построить график функции\r\n\r\n";
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -225,6 +225,7 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task2.V2
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск2 | Вариант 2 | Мартысевич А.Д.";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBoxIn_MAD.ResumeLayout(false);
             this.groupBoxIn_MAD.PerformLayout();
             this.groupBoxOut_MAD.ResumeLayout(false);
