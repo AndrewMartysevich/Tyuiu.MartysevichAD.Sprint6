@@ -32,27 +32,27 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task6.V17
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelTopOne_MAD = new System.Windows.Forms.Panel();
+            this.buttonInfo_MAD = new System.Windows.Forms.Button();
+            this.buttonUp_MAD = new System.Windows.Forms.Button();
+            this.buttonOpenFile_MAD = new System.Windows.Forms.Button();
             this.panelTopTwo_MAD = new System.Windows.Forms.Panel();
-            this.panelLeft_MAD = new System.Windows.Forms.Panel();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.panelBase_MAD = new System.Windows.Forms.Panel();
             this.groupBoxOne_MAD = new System.Windows.Forms.GroupBox();
             this.textBoxOne_MAD = new System.Windows.Forms.TextBox();
-            this.buttonOpenFile_MAD = new System.Windows.Forms.Button();
-            this.buttonUp_MAD = new System.Windows.Forms.Button();
-            this.buttonInfo_MAD = new System.Windows.Forms.Button();
+            this.panelLeft_MAD = new System.Windows.Forms.Panel();
             this.groupBoxIn_MAD = new System.Windows.Forms.GroupBox();
-            this.groupBoxOut_MAD = new System.Windows.Forms.GroupBox();
             this.textBoxIn_MAD = new System.Windows.Forms.TextBox();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.panelBase_MAD = new System.Windows.Forms.Panel();
+            this.groupBoxOut_MAD = new System.Windows.Forms.GroupBox();
             this.textBoxOut_MAD = new System.Windows.Forms.TextBox();
             this.openFileDialogTask_MAD = new System.Windows.Forms.OpenFileDialog();
             this.toolTipOne_MAD = new System.Windows.Forms.ToolTip(this.components);
             this.panelTopOne_MAD.SuspendLayout();
             this.panelTopTwo_MAD.SuspendLayout();
-            this.panelLeft_MAD.SuspendLayout();
-            this.panelBase_MAD.SuspendLayout();
             this.groupBoxOne_MAD.SuspendLayout();
+            this.panelLeft_MAD.SuspendLayout();
             this.groupBoxIn_MAD.SuspendLayout();
+            this.panelBase_MAD.SuspendLayout();
             this.groupBoxOut_MAD.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +67,48 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task6.V17
             this.panelTopOne_MAD.Size = new System.Drawing.Size(884, 73);
             this.panelTopOne_MAD.TabIndex = 0;
             // 
+            // buttonInfo_MAD
+            // 
+            this.buttonInfo_MAD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonInfo_MAD.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonInfo_MAD.Image = ((System.Drawing.Image)(resources.GetObject("buttonInfo_MAD.Image")));
+            this.buttonInfo_MAD.Location = new System.Drawing.Point(797, 4);
+            this.buttonInfo_MAD.Name = "buttonInfo_MAD";
+            this.buttonInfo_MAD.Size = new System.Drawing.Size(75, 63);
+            this.buttonInfo_MAD.TabIndex = 0;
+            this.buttonInfo_MAD.UseVisualStyleBackColor = false;
+            this.buttonInfo_MAD.Click += new System.EventHandler(this.buttonInfo_MAD_Click);
+            // 
+            // buttonUp_MAD
+            // 
+            this.buttonUp_MAD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonUp_MAD.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonUp_MAD.Enabled = false;
+            this.buttonUp_MAD.Image = ((System.Drawing.Image)(resources.GetObject("buttonUp_MAD.Image")));
+            this.buttonUp_MAD.Location = new System.Drawing.Point(110, 3);
+            this.buttonUp_MAD.Name = "buttonUp_MAD";
+            this.buttonUp_MAD.Size = new System.Drawing.Size(75, 63);
+            this.buttonUp_MAD.TabIndex = 0;
+            this.toolTipOne_MAD.SetToolTip(this.buttonUp_MAD, "Выводится третье слово каждой строки ");
+            this.buttonUp_MAD.UseVisualStyleBackColor = false;
+            this.buttonUp_MAD.Click += new System.EventHandler(this.buttonUp_MAD_Click);
+            // 
+            // buttonOpenFile_MAD
+            // 
+            this.buttonOpenFile_MAD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonOpenFile_MAD.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonOpenFile_MAD.Image = ((System.Drawing.Image)(resources.GetObject("buttonOpenFile_MAD.Image")));
+            this.buttonOpenFile_MAD.Location = new System.Drawing.Point(13, 4);
+            this.buttonOpenFile_MAD.Name = "buttonOpenFile_MAD";
+            this.buttonOpenFile_MAD.Size = new System.Drawing.Size(75, 63);
+            this.buttonOpenFile_MAD.TabIndex = 0;
+            this.toolTipOne_MAD.SetToolTip(this.buttonOpenFile_MAD, "Открыть файл.\r\nВыберите нужный файл для обработки");
+            this.buttonOpenFile_MAD.UseVisualStyleBackColor = false;
+            this.buttonOpenFile_MAD.Click += new System.EventHandler(this.buttonOpenFileDialog_MAD_Click);
+            // 
             // panelTopTwo_MAD
             // 
             this.panelTopTwo_MAD.Controls.Add(this.groupBoxOne_MAD);
@@ -75,32 +117,6 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task6.V17
             this.panelTopTwo_MAD.Name = "panelTopTwo_MAD";
             this.panelTopTwo_MAD.Size = new System.Drawing.Size(884, 96);
             this.panelTopTwo_MAD.TabIndex = 1;
-            // 
-            // panelLeft_MAD
-            // 
-            this.panelLeft_MAD.Controls.Add(this.groupBoxIn_MAD);
-            this.panelLeft_MAD.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft_MAD.Location = new System.Drawing.Point(0, 169);
-            this.panelLeft_MAD.Name = "panelLeft_MAD";
-            this.panelLeft_MAD.Size = new System.Drawing.Size(446, 392);
-            this.panelLeft_MAD.TabIndex = 2;
-            // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(446, 169);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 392);
-            this.splitter1.TabIndex = 3;
-            this.splitter1.TabStop = false;
-            // 
-            // panelBase_MAD
-            // 
-            this.panelBase_MAD.Controls.Add(this.groupBoxOut_MAD);
-            this.panelBase_MAD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBase_MAD.Location = new System.Drawing.Point(449, 169);
-            this.panelBase_MAD.Name = "panelBase_MAD";
-            this.panelBase_MAD.Size = new System.Drawing.Size(435, 392);
-            this.panelBase_MAD.TabIndex = 4;
             // 
             // groupBoxOne_MAD
             // 
@@ -130,46 +146,14 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task6.V17
             this.textBoxOne_MAD.TabIndex = 0;
             this.textBoxOne_MAD.Text = resources.GetString("textBoxOne_MAD.Text");
             // 
-            // buttonOpenFile_MAD
+            // panelLeft_MAD
             // 
-            this.buttonOpenFile_MAD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonOpenFile_MAD.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonOpenFile_MAD.Image = ((System.Drawing.Image)(resources.GetObject("buttonOpenFile_MAD.Image")));
-            this.buttonOpenFile_MAD.Location = new System.Drawing.Point(13, 4);
-            this.buttonOpenFile_MAD.Name = "buttonOpenFile_MAD";
-            this.buttonOpenFile_MAD.Size = new System.Drawing.Size(75, 63);
-            this.buttonOpenFile_MAD.TabIndex = 0;
-            this.toolTipOne_MAD.SetToolTip(this.buttonOpenFile_MAD, "Открыть файл.\r\nВыберите нужный файл для обработки");
-            this.buttonOpenFile_MAD.UseVisualStyleBackColor = false;
-            this.buttonOpenFile_MAD.Click += new System.EventHandler(this.buttonOpenFileDialog_MAD_Click);
-            // 
-            // buttonUp_MAD
-            // 
-            this.buttonUp_MAD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonUp_MAD.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonUp_MAD.Image = ((System.Drawing.Image)(resources.GetObject("buttonUp_MAD.Image")));
-            this.buttonUp_MAD.Location = new System.Drawing.Point(110, 3);
-            this.buttonUp_MAD.Name = "buttonUp_MAD";
-            this.buttonUp_MAD.Size = new System.Drawing.Size(75, 63);
-            this.buttonUp_MAD.TabIndex = 0;
-            this.toolTipOne_MAD.SetToolTip(this.buttonUp_MAD, "Выводится третье слово каждой строки ");
-            this.buttonUp_MAD.UseVisualStyleBackColor = false;
-            this.buttonUp_MAD.Click += new System.EventHandler(this.buttonUp_MAD_Click);
-            // 
-            // buttonInfo_MAD
-            // 
-            this.buttonInfo_MAD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonInfo_MAD.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonInfo_MAD.Image = ((System.Drawing.Image)(resources.GetObject("buttonInfo_MAD.Image")));
-            this.buttonInfo_MAD.Location = new System.Drawing.Point(797, 4);
-            this.buttonInfo_MAD.Name = "buttonInfo_MAD";
-            this.buttonInfo_MAD.Size = new System.Drawing.Size(75, 63);
-            this.buttonInfo_MAD.TabIndex = 0;
-            this.buttonInfo_MAD.UseVisualStyleBackColor = false;
-            this.buttonInfo_MAD.Click += new System.EventHandler(this.buttonInfo_MAD_Click);
+            this.panelLeft_MAD.Controls.Add(this.groupBoxIn_MAD);
+            this.panelLeft_MAD.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft_MAD.Location = new System.Drawing.Point(0, 169);
+            this.panelLeft_MAD.Name = "panelLeft_MAD";
+            this.panelLeft_MAD.Size = new System.Drawing.Size(446, 392);
+            this.panelLeft_MAD.TabIndex = 2;
             // 
             // groupBoxIn_MAD
             // 
@@ -183,6 +167,34 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task6.V17
             this.groupBoxIn_MAD.TabStop = false;
             this.groupBoxIn_MAD.Text = "Ввод";
             // 
+            // textBoxIn_MAD
+            // 
+            this.textBoxIn_MAD.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxIn_MAD.Location = new System.Drawing.Point(7, 22);
+            this.textBoxIn_MAD.Multiline = true;
+            this.textBoxIn_MAD.Name = "textBoxIn_MAD";
+            this.textBoxIn_MAD.ReadOnly = true;
+            this.textBoxIn_MAD.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxIn_MAD.Size = new System.Drawing.Size(405, 345);
+            this.textBoxIn_MAD.TabIndex = 0;
+            // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(446, 169);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(3, 392);
+            this.splitter1.TabIndex = 3;
+            this.splitter1.TabStop = false;
+            // 
+            // panelBase_MAD
+            // 
+            this.panelBase_MAD.Controls.Add(this.groupBoxOut_MAD);
+            this.panelBase_MAD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBase_MAD.Location = new System.Drawing.Point(449, 169);
+            this.panelBase_MAD.Name = "panelBase_MAD";
+            this.panelBase_MAD.Size = new System.Drawing.Size(435, 392);
+            this.panelBase_MAD.TabIndex = 4;
+            // 
             // groupBoxOut_MAD
             // 
             this.groupBoxOut_MAD.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -194,17 +206,6 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task6.V17
             this.groupBoxOut_MAD.TabIndex = 0;
             this.groupBoxOut_MAD.TabStop = false;
             this.groupBoxOut_MAD.Text = "Вывод";
-            // 
-            // textBoxIn_MAD
-            // 
-            this.textBoxIn_MAD.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxIn_MAD.Location = new System.Drawing.Point(7, 22);
-            this.textBoxIn_MAD.Multiline = true;
-            this.textBoxIn_MAD.Name = "textBoxIn_MAD";
-            this.textBoxIn_MAD.ReadOnly = true;
-            this.textBoxIn_MAD.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxIn_MAD.Size = new System.Drawing.Size(405, 345);
-            this.textBoxIn_MAD.TabIndex = 0;
             // 
             // textBoxOut_MAD
             // 
@@ -240,14 +241,15 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task6.V17
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск6 | Вариант 17 | Мартысевич А.Д.";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.panelTopOne_MAD.ResumeLayout(false);
             this.panelTopTwo_MAD.ResumeLayout(false);
-            this.panelLeft_MAD.ResumeLayout(false);
-            this.panelBase_MAD.ResumeLayout(false);
             this.groupBoxOne_MAD.ResumeLayout(false);
             this.groupBoxOne_MAD.PerformLayout();
+            this.panelLeft_MAD.ResumeLayout(false);
             this.groupBoxIn_MAD.ResumeLayout(false);
             this.groupBoxIn_MAD.PerformLayout();
+            this.panelBase_MAD.ResumeLayout(false);
             this.groupBoxOut_MAD.ResumeLayout(false);
             this.groupBoxOut_MAD.PerformLayout();
             this.ResumeLayout(false);

@@ -40,5 +40,10 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task6.V17
             FormAbout formAbout = new FormAbout();
             formAbout.ShowDialog();
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
