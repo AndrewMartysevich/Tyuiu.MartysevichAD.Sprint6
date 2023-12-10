@@ -221,11 +221,13 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task6.V17
             // openFileDialogTask_MAD
             // 
             this.openFileDialogTask_MAD.FileName = "openFileDialog1";
+            this.openFileDialogTask_MAD.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialogTask_MAD_FileOk);
             // 
             // toolTipOne_MAD
             // 
             this.toolTipOne_MAD.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipOne_MAD.ToolTipTitle = "Подсказка";
+            this.toolTipOne_MAD.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTipOne_MAD_Popup);
             // 
             // FormMain
             // 

@@ -45,5 +45,15 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task6.V17
         {
 
         }
+
+        private void toolTipOne_MAD_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void openFileDialogTask_MAD_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }
