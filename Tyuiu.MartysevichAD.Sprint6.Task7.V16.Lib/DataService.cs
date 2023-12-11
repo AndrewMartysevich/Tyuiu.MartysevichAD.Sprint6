@@ -39,9 +39,9 @@ namespace Tyuiu.MartysevichAD.Sprint6.Task7.V16.Lib
             {
                 for (int c = 0; c < columns; c++)
                 {
-                    if(arrayValues[5,c]%2!=0)
+                    if(arrayValues[4,c]%2!=0)
                     {
-                        arrayValues[5, c] = -1;
+                        arrayValues[4, c] = -1;
                     }
                 } 
             }
